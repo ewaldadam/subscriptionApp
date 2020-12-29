@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Subscription App</title>
+</head>
+<body>
+    <header class="headerTop">
+        <h2>Subscription App</h2>
+    </header>
+
+    <div class="mainContent">
+
+        <h3 class="thirdHL">Accounts</h3>
+
+    </div>
+
+    <div>
+        <button class="button button1" onclick="showMenu()">Add Subscription</button>
+    </div>
+
+
+    <div id="subscriptionMenu">
+        <form id="subscriptionForm">
+            <label id="headlineSelect" for="subscriptionDropdown">Subscription Service</label><br>
+            <select id="subscriptionDropdown" onchange="giveValueOfService()">
+                <option value="netflix">Netflix</option>
+                <option value="disney">Disney+</option>
+                <option value="spotify">Spotify</option>
+                <option value="dropbox">Dropbox</option>
+                <option value="1password">1Password</option>
+            </select><br>
+            <label>
+                <button id="addBTN" name="data" type="button" onclick="addSubElement()">Click</button>
+            </label>
+        </form>
+    </div>
+
+
+
+    <div id="content">
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+<script src="main.js"></script>
+</html>
